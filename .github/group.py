@@ -19,6 +19,4 @@ def groups_of_3(input: list[int]) -> list[list[int]]:
         new_list.append(remainder_list)
     return new_list
 
-
-
 #TASK 2 - in file.py

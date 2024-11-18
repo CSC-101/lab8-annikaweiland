@@ -32,9 +32,8 @@ def sum_of_lines(ipt: str) -> float:
         sums +=num
     return sums
 
-
-print(sum_of_lines("readfile.txt"))
-print(sum_of_lines("annika.txt"))
+if __name__ == '__main__':
+    print(sum_of_lines(sys.argv[1]))
 
 
 
