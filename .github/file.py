@@ -17,6 +17,7 @@ def sum_of_lines(ipt: str) -> float:
         linelist = fileopen.readlines()
     except FileNotFoundError as e:
         return e
+        sys.exit(1)
     list2 = [i.strip("\n") for i in linelist]
     str = " ".join(list2)
     list3 = str.split()
@@ -27,9 +28,10 @@ def sum_of_lines(ipt: str) -> float:
         if type(flt) == float:
             floatlist.append(flt)
         else:
-            print ("cannot convert to float for one of the lines. check text file!")
+            print ("ERROR: cannot convert to float for one of the characters. check text file!")
     for num in floatlist:
         sums +=num
+    fileopen.close()
     return sums
 
 if __name__ == '__main__':
