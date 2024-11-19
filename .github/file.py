@@ -3,6 +3,7 @@ from typing import Optional
 
 
 #TASK 2
+
 #sys.argv[1] = ipt
 def str_to_float(input: str) -> Optional[float]:
     try:
@@ -11,6 +12,7 @@ def str_to_float(input: str) -> Optional[float]:
     except ValueError as e:
         return e
 
+#takes command line argument of a file, reads each line, then prints the sum (if possible)
 def sum_of_lines(ipt: str) -> float:
     try:
         fileopen = open(ipt)
