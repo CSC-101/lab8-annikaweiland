@@ -1,5 +1,7 @@
 #TASK 1
-
+#input: a list
+#output: an embedded list
+#purpose: to group a list into sections of 3 (if possible)
 def groups_of_3(input: list[int]) -> list[list[int]]:
     new_list = []
     remainder_list = []
